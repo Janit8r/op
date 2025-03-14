@@ -1,9 +1,10 @@
 name: X86_64 OpenWrt
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
-  schedule:
-    - cron: 0 19 * * *
 
 env:
   REPO_URL: https://github.com/nisemoe/lede_surface
